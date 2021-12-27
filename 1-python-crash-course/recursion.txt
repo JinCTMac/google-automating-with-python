@@ -16,3 +16,13 @@ def factorial(n):
   return n * factorial(n-1)
 
 The condition checking if n < 2 is the base case, while the recursive case is what is returned by n * factorial(n-1). The function loops until it reaches the base case, where it returns 1, then multiplies this by the result of calling the function inside multiple times, until it reaches the value of n factorial.
+
+Why do we need recursive functions?
+
+Solutions to some specific problems, like maths functions, are best understood in recursion.
+
+Let's say we need a tool that goes through the directories on your PC and calculates how many files are contained in each - in those files, you might have sub-directories which you need to count into as well.
+
+The base case might be a directory that has no sub-directories in it at all, in which case the function just returns the amount of files, while the recursive case calls the recursive function for each of the sub-directories, with the return value being all the files in the directory + all the files in the sub-directories.
+
+In this case, a computer filing system is an example of a recursive storage pattern because directories can contain sub-directories which contain sub-directories, etc.
