@@ -26,3 +26,20 @@ Let's say we need a tool that goes through the directories on your PC and calcul
 The base case might be a directory that has no sub-directories in it at all, in which case the function just returns the amount of files, while the recursive case calls the recursive function for each of the sub-directories, with the return value being all the files in the directory + all the files in the sub-directories.
 
 In this case, a computer filing system is an example of a recursive storage pattern because directories can contain sub-directories which contain sub-directories, etc.
+
+Anything that deals with groups of users that can contain other groups is another IT structure that could require recursion. The base case is a group that only contains users, listing all of them as the return value, while the recursive case involves going through any group that contains sub-groups, listing all of the users in the group and in the sub-groups as the return value.
+
+In some languages, there is a maximum number of recursive functions you can do. In Python, there can only be 1000 recursive function calls, which might be enough for mathematical recursions. We can use recursion in many scenarios, but we don't want to use it for a function that reaches 1000 recursive levels.
+
+Remember, a recursive function usually has this structure:
+
+def recursive_function(parameters):
+    if base_case_condition(parameters):
+        return base_case_value
+    recursive_function(modified_parameters)
+
+A recursive function must include a recursive case and base case. The recursive case calls the function again, with a different value. The base case returns a value without calling the same function.
+
+https://en.wikipedia.org/wiki/Recursion
+
+Another example of recursion is when you stream using OBS on Twitch, the stream shows your computer screen in a window which contains that screen again on a window getting smaller and smaller.
