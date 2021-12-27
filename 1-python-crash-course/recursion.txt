@@ -1,1 +1,18 @@
 Recursion
+
+Recursion is a powerful technique used in software engineering, but isn't used much in automation.
+
+Definition: Recursion is the application of the same procedure to a smaller problem.
+
+An example of recursion is calling the same function within a function call. Such as square_number(square_number(n)). It is thus a way of performing a repetitive task.
+
+A recursive function calls itself usually with a modified parameter until it reaches a specific condition, called the base case.
+
+Look at the below factorial function:
+
+def factorial(n):
+  if n < 2:
+    return 1
+  return n * factorial(n-1)
+
+The condition checking if n < 2 is the base case, while the recursive case is what is returned by n * factorial(n-1). The function loops until it reaches the base case, where it returns 1, then multiplies this by the result of calling the function inside multiple times, until it reaches the value of n factorial.
