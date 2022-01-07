@@ -1,0 +1,30 @@
+Iterating over lists and tuples
+
+We can loop over a list using a simple for loop:
+
+animals = ["Lion", "Monkey", "Elephant"]
+chars = 0
+
+for animal in animals:
+  chars += len(animal)
+
+print("Chars: {chars} Average chars: {avgchars}").format(chars=chars, avgchars=chars/len(animals))
+
+What if you wanted to know the index of an element while going through the list?
+
+You can just use the enumerate function.
+
+The enumerate function works with a for loop to return a tuple for each element in the list.
+
+people = ["John", "Maria", "Takeuchi"]
+
+for index, person in enumerate(people):
+  print("{} - {}").format(index, person)
+
+Now a slightly more complex function that takes a list containing tuples of people's email address and name and formatting it into a new list:
+
+def full_emails(people):
+  result = []
+  for email, name in people:
+    result.append("{} <{}>".format(name, email))
+  return result
