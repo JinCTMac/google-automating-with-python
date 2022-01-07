@@ -1,0 +1,20 @@
+With the Python .format method, you can concatenate and format strings similar to template literals in JavaScript and interpolation in Ruby. In those languages, you can interpolate strings with variables using ${} and backtacks and #{} with " in JS and Ruby respectively, but in Python you have to call the .format method with {} inside of the string instead.
+
+This works similarly to JS and Ruby, but you format the content inside of the {} within the .format method attached to the string.
+
+# "base string with {} placeholders".format(variables)
+
+example = "format() method"
+
+formatted_string = "this is an example of using the {} on a string".format(example)
+
+print(formatted_string)
+
+"""Outputs:
+this is an example of using the format() method on a string
+"""
+
+
+OR:
+
+# "{var1} {var2}".format(var1=value1, var2=value2)
