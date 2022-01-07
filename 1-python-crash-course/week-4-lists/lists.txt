@@ -8,3 +8,9 @@ Adding an element to a list in a specific index position - the .insert() method
 
 Removing elements from a list - the .remove() method
   Removes gets rid of the first occurrence of the element passed to it. If the element doesn't not exist, it throws an error.
+
+Removing elements from a list at a given index position - the .pop() method
+  Pop takes 2 parameters, the index position and the element you want to remove.
+
+Reassigning elemements - list[index] = value
+  You can simply reassign the value of an element in a list.
