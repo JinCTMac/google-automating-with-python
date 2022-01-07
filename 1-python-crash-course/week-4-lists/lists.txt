@@ -1,0 +1,10 @@
+Methods to modify lists
+
+Adding an element to a list - the .append() method
+  Append adds an item to the end of a list, like .push() in JS and Ruby.
+
+Adding an element to a list in a specific index position - the .insert() method
+  Insert takes 2 parameters, the index position you want to insert at, and the value of that index. It shifts every item after it by 1 if inserted between the first and the last, and if inserted to an element higher than the current length, it inserts at the end of the list.
+
+Removing elements from a list - the .remove() method
+  Removes gets rid of the first occurrence of the element passed to it. If the element doesn't not exist, it throws an error.
