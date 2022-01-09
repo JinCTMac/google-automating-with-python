@@ -1,0 +1,36 @@
+Iterating over a Dictionary
+
+For loops
+You can use for loops to iterate over a dictionary.
+
+file_counts = {
+  "py": 23,
+  "txt": 12,
+  "js": 59
+}
+
+for extension in file_counts:
+  print(extension)
+
+The for loop will print just the values of each key in the dictionary.
+Or you can use the item method, which returns a tuple for each element in the dictionary.
+
+for extension, amount in file_counts.items():
+  print("There are {} files with the .{} extension).format(amount, extension)
+
+Or you can just use .keys() and .values() to access the keys and values.
+
+for value in file_counts.values():
+  print value
+
+As each key can be present only once, dictionaries are great for counting frequency.
+
+For example, if we wanted to count each occurance of a letter in a piece of text, we can make a function to do this for us.
+
+def count_letter(text):
+  frequency_chart = {}
+  for letter in text:
+    if letter not in frequency_chart:
+      frequency_chart[letter] = 0
+    frequency_chart[letter] += 1
+  return frequency_chart
