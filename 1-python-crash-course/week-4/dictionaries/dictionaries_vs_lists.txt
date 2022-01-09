@@ -1,0 +1,17 @@
+Dictionaries VS Lists
+
+Dictionaries and lists are both useful and have strengths in different situations. We can represent in lists sequences of information that we want to access, but if we have corresponding data then we can use a dictionary instead.
+
+For example, a dictionary can contain a user and their password, and finding a specific user in that dictionary will take no time at all, but if we used a list it would take a very long time.
+
+Dictionary keys can be any immutable type.
+Values for dictionaries can be more complex data structures like lists and other dictionaries.
+
+wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+for clothes in wardrobe:
+	for color in wardrobe[clothes]:
+		print("{} {}".format(color, clothes))
+
+The above code loops through the wardrobe for each item of clothing, and then inside the for loop is another for loop that loops through the value associated with that item of clothing, which is a list of colors.
+
+A set is another data type and is used when we want to have a list of elements and be sure that each element only occurs once. Elements of a set must also be immutable, and might be seen as a dictionary where only the keys are there.
