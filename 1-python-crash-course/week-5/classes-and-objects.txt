@@ -1,0 +1,7 @@
+Classes and Objects in Python
+
+We used the .type() function to test what type a variable is. The .type() function returns the Class that the variable belongs to. The String class for instance has methods like .upper() and .isnumeric(). Each string we've used has been a different instance of the string class, so the result of calling those methods on each instance would be different as well.
+
+If you want to see all the methods associated with a class, we can call the dir method on a variable to see all the methods associated with that class.
+
+The help() method gives us the documentation for that class.

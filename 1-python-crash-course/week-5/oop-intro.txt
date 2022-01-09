@@ -1,0 +1,10 @@
+OOP Intro
+
+Object-oriented programming is a way of programming that revolves around objects and classes. We can describe a Toyota as a brand of car, and if we want to describe them to our computer we have to do it in the same way. We can use objects and classes to help computers understand real-world concepts.
+
+OOP is a flexible paradigm where classes or types represent and define concepts while objects are instances of classes. A class called fruit could have an object or instance called Apple, Banana and so on.
+
+The core of OOP is attributes and methods. Attributes or properties as they are in Ruby define the various attributes of an object - for a fruit, it might be its color, its size, its shape, etc. Its methods depend on what we will do with that object or instance, like an eat() method that reduces the size of the fruit, or a cut() method that splits up the fruit.
+
+A method can be understood as a function associated with that class or object instance, where we have class methods and instance methods depending on what the method is being called on i.e. the class itself or an instance of the class.
+In Ruby, the Class.new() method is an example of a class method.
