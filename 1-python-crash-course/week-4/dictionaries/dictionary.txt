@@ -8,6 +8,27 @@ The key is the word, the value is the definition.
 Dictionaries use {} brackeets.
 
 dict = {
-  first: "cool",
-  second: "not cool"
+  "first": "cool",
+  "second": "not cool"
 }
+
+In the above, we've formed a dictionary that has strings for keys, with strings for values. We can mix and match data values as we need.
+
+file_counts = {
+  "py": 23,
+  "txt": 100
+}
+
+To return the value of a key, we simply write the dictionary name and access the key in [] brackets.
+
+Like file_counts["txt"] would return 100.
+
+To check if a key exists inside of a dictionary, we can use the in syntax.
+
+"py" in file_counts >>> would return true
+
+Dictionaries are mutable, so we can call CRUD actions on them.
+
+To delete a key-value pair, just use the del keyword and write the dictionary key.
+
+Like del file_counts["py"].
