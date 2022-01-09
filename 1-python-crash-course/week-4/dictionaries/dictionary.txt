@@ -1,0 +1,13 @@
+What is a Dictionary?
+
+The equivalent of a hash or an object in Ruby/JS.
+We don't access elements inside dictionaries using positions, as dictionary entries take key-value pairs. We can use several data-types for the keys, including strings, integers, tuples, etc.
+
+The key is the word, the value is the definition.
+
+Dictionaries use {} brackeets.
+
+dict = {
+  first: "cool",
+  second: "not cool"
+}
