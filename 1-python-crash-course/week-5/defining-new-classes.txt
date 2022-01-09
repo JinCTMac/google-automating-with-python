@@ -1,0 +1,26 @@
+Defining new classes in Python
+
+Classes in Python are defined using the Class keyword.
+
+Class Fruit:
+  pass
+
+Class names in Python should start with a capital letter.
+To add attributes, we do that underneath the class definition.
+The pass keyword is used to indicate that nothing happens, and that the class is empty, which is needed for correct syntax in some cases.
+
+Class Fruit:
+  color: ""
+  flavour: ""
+
+Once we have a body for the class, we don't need the pass keyword. Now we can create instances of the class like so.
+
+apple = Fruit()
+
+To create a new instance of any class, we call the class name with brackets like it were a function.
+
+apple.color = "Red"
+apple.flavour = "Tasty"
+print(apple.color)
+
+To set the attributes, we can do so like this. We use . notation to access the attributes of an object instance, or the methods for that instance.
