@@ -1,0 +1,26 @@
+Instance Methods
+
+We used methods to get objects to do things, like .lower() for strings, and methods are functions that work on the attributes of a specific instance of a class.
+
+When we call .append() to a list, we are adding to that specific list only.
+
+class Piglet:
+    pass
+
+hamlet = Piglet()
+
+class Piglet:
+  def speak(self):
+    print("oink")
+
+We can define a method in a class, where the parameter of self identifies what instance the method is being called on. With self, we can call the .speak() method on an instance of a class and it will refer to itself.
+
+We can make this more specific by making the instance method refer to an attribute of the instance, like .name.
+
+class Piglet:
+  def speak(self):
+    print("Oink! I'm {}! Oink!".format(self.name))
+
+hamlet = Piglet()
+hamlet.name = "Hamelet"
+hamlet.speak() => Oink! I'm Hamlet! Oink!
