@@ -10,3 +10,16 @@ class Apple:
     self flavor = flavor
 
 The constructor method, or the initialise method, takes 3 parameters - the self, which means that the attributes will always refer to the instance of the class being created, and then the attributes you want, which you set with self.attribute = attribute. This allows us to set the values of a class right when we create them, just like in Ruby with the initialise method.
+
+Constructor methods are not the only special methods we use, as when we convert a value to a string or integer, that also uses a special method.
+
+What happens when we print an object without any attribute? Python just prints out the default, telling us the type of the object and its position in memory. So we use the str method to return what we want when we just print out the instance of the class we want to print.
+
+class Apple:
+  def __init__(self, color, flavor):
+    self.color = color
+    self flavor = flavor
+  def __str__(self):
+    print("this apple is {} and its flavor is {}".format(self.color, self.flavor))
+
+So if we call print(jonagold), we will get the friendly string and not the default response.
