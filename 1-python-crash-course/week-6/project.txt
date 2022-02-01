@@ -24,3 +24,13 @@ We can work this out by looking at the rest of the system where our script will 
 
 Research
 Figuring out how we go about doing this.
+We have our problem statement, and focus our approach. We need to input a list of event objects, and then access the attributes. For example, with the login times, if a user is logged in, then haven't logged out, but if there is logout times, then they are no longer using the machine.
+
+To sort a list, we can use the .sort() or .sorted() functions, where .sort() affects the list being input while sorted() creates a new function.
+
+.sort() takes parameters, and one is a key, allowing us to sort by the length of the string, for example. We will order our event objects by date, so we can create our own function to sort the objects by date.
+
+Planning the script
+We've defined our problem statement and researched the tools we need to solve the problem. We know we've sorting event objects by time, telling us the machine name, users and login/logout times. When we process an event, if we see a login, we want to add it to the users logged in, and if its a logout we remove them. We can represent this as a set, and that as a dictionary, where the machines are the keys and the users are the values. We can then use another function to generate the report, taking the dictionary that we pass to it.
+
+Separating functions is helpful when debugging or making other changes, as it keeps functions from getting ‘tangled’. It also makes it easier to adapt functions for other uses.
