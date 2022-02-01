@@ -1,0 +1,14 @@
+Project Details
+
+About Jupyter Notebooks
+We use codeblocks to write small snippets of code. We can use Jupyter Notebooks for Python, which is a special kind of document that contains pieces of code. The notebooks can also contain text, widgets and other things, allowing us to tell interactive stories with our code. We can run and edit our code in the web browser, and can also document/describe the code.
+
+We execute the code by running or using command + enter.
+Jupyter notebooks execute one by one, where we can execute each code block individually.
+
+Resources on Jupyter Notebooks:
+- https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook
+- https://www.codecademy.com/article/how-to-use-jupyter-notebooks
+- https://jupyter4edu.github.io/jupyter-edu-book/why-we-use-jupyter-notebooks.html#why-do-we-use-jupyter
+
+Project Intro
