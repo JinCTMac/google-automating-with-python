@@ -23,3 +23,5 @@ class Apple:
     print("this apple is {} and its flavor is {}".format(self.color, self.flavor))
 
 So if we call print(jonagold), we will get the friendly string and not the default response.
+
+https://www.coursera.org/learn/python-crash-course/supplement/52GBW/classes-and-methods-cheat-sheet-optional
