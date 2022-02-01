@@ -1,0 +1,7 @@
+Final Project Overview
+
+For the project, we'll be building a wordcloud, an image of words where the size of the word is based on the amount of times the word appears in the text.
+
+We can create a dictionary and count up the frequency of the words. But we need to remove punctuation, so we need to clean up the text to remove all the punctionation. And we want to keep the wordcloud interesting, so we need to get rid of stopwords, which appear a lot but don't matter much. So we will be using NLP to remove stopwords.
+
+We will be processing a txt file, where the text can be whatever we want.
