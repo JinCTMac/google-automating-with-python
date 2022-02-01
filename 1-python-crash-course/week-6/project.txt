@@ -12,3 +12,15 @@ Resources on Jupyter Notebooks:
 - https://jupyter4edu.github.io/jupyter-edu-book/why-we-use-jupyter-notebooks.html#why-do-we-use-jupyter
 
 Project Intro
+Writing a script from the ground up
+
+How do we break down a problem into smaller steps that we can solve?
+Imagine we have a situation where we need to write a report telling us what users are using what machines at any given time. We need to figure out:
+
+- What data we're using as input
+- What data we're getting as output
+
+We can work this out by looking at the rest of the system where our script will live, and look at the attributes that we're accessing and using for inputs. Our script receives event objects, and we access the event object attributes for the login and logout data, looking for the names of the users who have logged in. Ultimately, we need to look at event objects, getting date, user, machine and type details and then generate a report that logs all of those details.
+
+Research
+Figuring out how we go about doing this.
