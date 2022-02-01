@@ -13,12 +13,12 @@ The constructor method, or the initialise method, takes 3 parameters - the self,
 
 Constructor methods are not the only special methods we use, as when we convert a value to a string or integer, that also uses a special method.
 
-What happens when we print an object without any attribute? Python just prints out the default, telling us the type of the object and its position in memory. So we use the str method to return what we want when we just print out the instance of the class we want to print.
+What happens when we print an object without any attribute i.e. print(appleobj)? Python just prints out the default, telling us the type of the object and its position in memory. So we use the str method to return what we want when we just print out the instance of the class we want to print.
 
 class Apple:
   def __init__(self, color, flavor):
     self.color = color
-    self flavor = flavor
+    self.flavor = flavor
   def __str__(self):
     print("this apple is {} and its flavor is {}".format(self.color, self.flavor))
 

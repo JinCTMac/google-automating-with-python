@@ -1,0 +1,15 @@
+Documenting Functions, classes and methods
+
+We can use the help() function in Python to bring up the documentation for a certain object's class i.e. help([1,2,3]). We can also do this on our own classes, methods and functions. This will bring up a list of the methods that we've made in our class. But our documentation won't explain very much, so we want our methods, classes and functions to give more information when they call the help method.
+
+For this, we need a docstring, which allows us to attach relevant documentation text. We use triple quotes """ to wrap the docstring and indent to the right, then we can write the accompanying explanation text. We add docstrings inside of a function, and we can define the rest of the function inside of it as well. The same applies to our methods as well.
+
+class Apple:
+  def __init__(self, color, flavor):
+    self.color = color
+    self.flavor = flavor
+  def __str__(self):
+    """ tells us about the attributes/properties of the apple """
+    print("this apple is {} and its flavor is {}".format(self.color, self.flavor))
+
+https://www.coursera.org/learn/python-crash-course/supplement/LflUC/documenting-with-docstrings
