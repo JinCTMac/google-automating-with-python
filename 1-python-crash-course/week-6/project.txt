@@ -34,3 +34,42 @@ Planning the script
 We've defined our problem statement and researched the tools we need to solve the problem. We know we've sorting event objects by time, telling us the machine name, users and login/logout times. When we process an event, if we see a login, we want to add it to the users logged in, and if its a logout we remove them. We can represent this as a set, and that as a dictionary, where the machines are the keys and the users are the values. We can then use another function to generate the report, taking the dictionary that we pass to it.
 
 Separating functions is helpful when debugging or making other changes, as it keeps functions from getting ‘tangled’. It also makes it easier to adapt functions for other uses.
+
+Writing the script
+
+We know we're sorting list objects chronologically by date, then putting the data into a dictionary of sets where keys are machines and values are users, and using that to generate the report. Lets start by defining the helper functions to get the date.
+
+def get_date(event):
+  return event.date
+
+Next the actual sorting function.
+
+def current_users(events):
+  # we give .sort() a key parameter, telling .sort to sort chronologically by date instead of alphabetically
+  events.sort(key=get_date)
+  # then we create a dictionary to store our machines and users
+  machines = {}
+  # now we can iterate through the list of events, if the machine is not there, we can add it to the dictionary, where the value is a set
+  # a set is an unordered list, where there are no indexes and the list is immutable
+  for event in events:
+    if event.machine not in machines:
+      machines[event.machine] = set()
+    # if a user is logged in, we add them to the set, if they are logged out, we remove them from the set
+    if event.type == "Login":
+      machines(event.machine).add(event.user)
+    elif event.type == "Logout":
+      machines(event.machine).remove(event.user)
+
+The dictionary will contain all machines as keys, with values as a set of the users who are using the machine.
+
+Finally, we will generate a report, with a new function.
+
+def generate_report(machines):
+  # to iterate through the keys and values, we need to use the .items() method, which connects to an iterable and allows us to iterate through both the keys and values at the same time
+  # however, we don't want to print out a set if the set for that machine has no users, so if the set has 0 elements, we don't want it to print
+  for machine, users in machines.items():
+    if len(users) > 0:
+      # we make the users into a string of their names, separated by commas using the .join() method
+      user_list = ", ".join(users)
+      # finally, we can format the output
+      print("{}: {}").format(machine, user_list)
